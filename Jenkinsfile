@@ -1,3 +1,4 @@
+properties([parameters([booleanParam(description: 'fdfgd', name: 'www')])])
 pipeline {
     agent any
 
