@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 git 'https://github.com/comranIT/Git-Jen-Py.git'
-                bat 'dir'
+                bat 'python main.py'
             }
         }
     }
