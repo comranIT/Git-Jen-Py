@@ -3,9 +3,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Run_app') {
             steps {
-                git 'https://github.com/comranIT/Git-Jen-Py.git'
+                bat 'python main.py'
+            }
+        }
+        stage('Test_app') {
+            steps {
                 bat 'python main.py'
             }
         }
